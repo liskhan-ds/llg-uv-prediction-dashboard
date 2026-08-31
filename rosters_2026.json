@@ -1,0 +1,2972 @@
+{
+  "데포르티보 알라베스": [
+    {
+      "name": "Adrián Rodríguez",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Antonio Sivera",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Jesús Owono",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Grégoire Swiderski",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Ville Koski",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jonny",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Facundo Garcés",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Nahuel Tenaglia",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Nicolás Valentini",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Ángel Pérez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Youssef Lekhedim",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Xanet Oláiz",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pablo Ibáñez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Denis Suárez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Carles Aleñá",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Carlos Protesoni",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ander Guevara",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Antonio Blanco",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Selu Diallo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Mikel Rodriguez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Miguel Rodríguez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Toni Martínez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Mariano Díaz",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Lucas Boyé",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Hugo Novoa",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Abde Rebbach",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Aitor Mañas",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Izei Hernandez",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "아틀레틱 빌바오": [
+    {
+      "name": "Unai Simón",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Mikel Santos",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Álex Padilla",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Yuri Berchiche",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Aymeric Laporte",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Yeray",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Andoni Gorosabel",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Dani Vivian",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jesús Areso",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Aitor Paredes",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Johaneko Louis Jean",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Hugo Rincón",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Unai Egiluz",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Adama Boiro",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iker Monreal",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iñigo Ruiz de Galarreta",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Robert Navarro",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Oihan Sancet",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Unai Vencedor",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Beñat Prados",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Mikel Jauregizar",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Beñat Gerenabarrena",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Peio Canales",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alejandro Rego",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Selton Sánchez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Álex Berenguer",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Iñaki Williams",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Gorka Guruzeta",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Nico Williams",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Nico Serrano",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Álvaro Djaló",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Maroan Sannadi",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Asier Hierro",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Elijah Gift",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "아틀레티코 마드리드": [
+    {
+      "name": "Jan Oblak",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Juan Musso",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Cristian Romero",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alejandro Grimaldo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "José María Giménez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Robin Le Normand",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Dávid Hancko",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marc Pubill",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jorge Domínguez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Daniel Martinez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Rodrigo Mendoza",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Koke",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jorge Castillo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Thomas Lemar",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Marcos Llorente",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Lee Kang-In",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Morten Hjulmand",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Johnny Cardoso",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Álex Baena",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Obed Vargas",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pablo Barrios",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alexander Sørloth",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ademola Lookman",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Julián Álvarez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Giuliano Simeone",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Carlos Martín",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Arnau Ortiz",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Miguel Cubo",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "바르셀로나": [
+    {
+      "name": "Wojciech Szczesny",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Dominik Livakovic",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Joan García",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Eder Aller",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Eric García",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "João Cancelo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Andreas Christensen",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jules Koundé",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Álvaro Cortés",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Gerard Martín",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alejandro Balde",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pau Cubarsí",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Xavi Espart",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jordi Pesquer",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Frenkie de Jong",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Dani Olmo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Rodri",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pedri",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gavi",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Marc Casadó",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Fermín López",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Marc Bernal",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Brian Fariñas",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Raphinha",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Anthony Gordon",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Karim Adeyemi",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Roony Bardghji",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Lamine Yamal",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Jesse Bisiwu",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Hamza Abdelkarim",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "셀타 비고": [
+    {
+      "name": "Andrei Radu",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Iván Villar",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Altay Bayindir",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Abdoulaye Faye",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marcos Alonso",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Carl Starfelt",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Javi Galán",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Sergio Carreira",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Javi Rueda",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Álvaro Núñez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Javi Rodríguez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Yoel Lago",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Enrique Ribes",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Hugo Álvarez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aleix Febas",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ilaix Moriba",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Williot Swedberg",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Hugo Gonzalez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Miguel Román",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Andrés Antañón",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Hugo Burcio",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Iago Aspas",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Pablo Durán",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Borja Iglesias",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Carles Pérez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ferran Jutglà",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Couhaib Driouech",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Jones El-Abdellaoui",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "데포르티보": [
+    {
+      "name": "Álvaro Fernández",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Germán Parreño",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Leo Román",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Eric Puerto",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Ximo Navarro",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Angeliño",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Miguel Loureiro",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Giacomo Quagliata",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Arnau Comas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Adrià Altimira",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Lucas Noubi",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Dani Barcia",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Bright Ede",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "José Ángel",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Riki Rodríguez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Mario Soriano Carreno",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Charlie Patino",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Diego Villares",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Lorenzo Amatucci",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Teun Gijselhart",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jonathan Asp Jensen",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Noé Carrillo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pierre-Emerick Aubameyang",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Adama Traoré",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Zakaria Eddahchouri",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Yeremay Hernández",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Luis Cruz",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Kevin Sánchez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "David Mella",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Bil Nsongo",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "엘체": [
+    {
+      "name": "Matías Dituro",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Alejandro Iturbe",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Pedro Bigas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Víctor Chust",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Bambo Diaby",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "John Donald",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "David Affengruber",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Buba Sangaré",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Matia Barzic",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Josan",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gonzalo Villar",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Marc Aguado",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Federico Redondo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Facundo Buonanotte",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Martim Neto",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Javier Morcillo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ezequiel Ponce",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Grady Diangana",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "José Antonio Morente",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Germán Valera",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Fernando Niño",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Lucas Cepeda",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Yago Alonso",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Abiel Osorio",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Adam Boayar",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Nordin Al Lal",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ali Houary",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Rafael Núñez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Umaru",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Álvaro Padilla Escribá",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "에스파뇰": [
+    {
+      "name": "Marko Dmitrovic",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Ángel Fortuño",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Llorenç Serred",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Leandro Cabrera",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Unai Núñez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Vanja Drkusic",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Omar El Hilali",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Rubén Sánchez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Clemens Riedel",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Quilindschy Hartman",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "José Ángel López",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Roger Hinojo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pere Milla",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Edu Expósito",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pol Lozano",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Urko Gonzalez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gabriel Moscardo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Javi Hernandez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Rafael Bauza",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Enrique García",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Javier Puado",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Tyrhys Dolan",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Jofre Carreras",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Bryan Zaragoza",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Roberto Fernández",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Marcos Fernández",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Cala",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Adama Timera",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "헤타페": [
+    {
+      "name": "David Soria",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Jirí Letácek",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Diego Ferrer",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Kiko Femenía",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Johan Mojica",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Djené",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Juan Berrocal",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Abdel Abqar",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Zaid Romero",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Saba Sazonov",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Andrés García",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Sebastián Boselli",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Curro Burgos",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jean Ives Valou",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Davinchi",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Nemanja Gudelj",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Javi Muñoz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Orel Mangala",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Yvan Neyou",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Francho Serrano",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ramón Terrats",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Mario Martín",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alberto Risco",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Christantus Uche",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Óscar López",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Juanmi",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Enes Ünal",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Borja Mayoral",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Martín Satriano",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ibra Drammeh",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "레반테": [
+    {
+      "name": "Mathew Ryan",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Pablo Cuñat",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Alejandro Primo",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Daniel Martín",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Ihor Galdin",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Aïssa Mandi",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jeremy Toljan",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Víctor García",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Adrián de la Fuente",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Manu Sánchez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Xavi Grande",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jorge Cabello",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Axel Tape",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Ifeanyi Ndukwe",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Nacho Pérez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marc Santos Gavilán",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alberto Calatrava Ragull",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Carlos Álvarez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Roger Brugué",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Orio Rey",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jon Ander Olasagasti",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Hugo Sotelo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Enzo Bardeli",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Dani Requena",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Manel Usedo Domingo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Iván Romero",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Tai Abed",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Thiago Fernández",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Etta Eyong",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Paco Cortés",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Yanis Kasonga Musuayi",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "말라가": [
+    {
+      "name": "Alfonso Herrero",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Carlos López",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "José Salinas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Einar Galilea",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Moussa Diarra",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Fernando Calero",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Álex Pastor",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Dani Sánchez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Ángel Recio",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Carlos Puga",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Diego Murillo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pablo Arriaza",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Rafa Garrido",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Juan Cruz",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Pablo Martínez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ramón Enríquez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Carlos Dotor",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Daniel Lorenzo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Rafa Rodríguez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Izan Merino",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aarón Moloney",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Otu Junior",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Joaquín Muñoz",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Eneko Jauregui",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "David Larrubia",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Julen Lobete",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Haitam Abaida",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Adrián Niño",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Chupete",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Juani",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "오사수나": [
+    {
+      "name": "Aitor Fernández",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Sergio Herrera",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Rafa Fernández",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Diego Rico",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Valentin Rosier",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alejandro Catena",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Abel Bretones",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jorge Herrando",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Enzo Boyomo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Rockson Yeboah",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iñigo Arguibide",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Unai Santos",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Lucas Torró",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Rubén García",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jon Moncayola",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aimar Oroz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Iker Muñoz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Asier Osambela",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Mauro Echegoyen",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Moi Gómez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ante Budimir",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Enrique Barja",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Raúl García",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Raúl Moro",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Jonathan Dubasin",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Asier Bonel Aicua",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "라싱 산탄데르": [
+    {
+      "name": "Julen Agirrezabala",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Simon Eriksson",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Jorge Salinas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Manu",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pablo Ramon",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alvaro Mantilla",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pedro Felipe",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Facundo González",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Carlos Sánchez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Matteo Prati",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Sergio Canales",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Íñigo Sainz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Iván Martín",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gustavo Puerta",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Maguette Gueye",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Diego Diaz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Sergio Martínez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Andrés Vallecillo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Andrés Martín",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Asier Villalibre",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Iñigo Vicente",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Giorgi Guliashvili",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Juan Carlos Arana",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Yassir Zabiri",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Hugo Pérez Sañudo",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Jorge Castellanos Del Olmo",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "라요 바예카노": [
+    {
+      "name": "Daniel Cárdenas",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Augusto Batalla",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Florian Lejeune",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iván Balliu",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Luiz Felipe",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marash Kumbulla",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Sergio Lozano",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Andrei Ratiu",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jozhua Vertrouwd",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pelayo Fernández",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marco de las Sias",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Álvaro García",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Unai López",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pedro Díaz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Isi Palazón",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Óscar Valentín",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Randy Nteka",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pathé Ciss",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Samu Becerra",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Marco Román",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gnangoro Bouare Samake",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Iván Alonso Martín",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Raúl de Tomás",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Jorge de Frutos",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Giorgi Tsitaishvili",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Sergio Camello",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Alexandre Alemão",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Fran Pérez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Etienne Eto'O Pineda",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "레알 베티스": [
+    {
+      "name": "Diego Conde",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Álvaro Valles",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Manu González",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Álvaro De Pablo",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Marc Bartra",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Héctor Bellerín",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Diego Llorente",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Fran García",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Junior Firpo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Natan",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Valentín Gómez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Ángel Ortiz",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Rodrigo Riquelme",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Isco",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Giovani Lo Celso",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pablo Fornals",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Marc Roca",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Nelson Deossa",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Facundo Bernal",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aitor Ruibal",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Troy Parrott",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Antony",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Iker Losada",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Abde Ezzalzouli",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Cucho Hernández",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Gonzalo Petit",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Pablo García",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "레알 마드리드": [
+    {
+      "name": "Javier Navarro",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Thibaut Courtois",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Andriy Lunin",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Sergio Mestre",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Denzel Dumfries",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Ferland Mendy",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Trent Alexander-Arnold",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Éder Militão",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Ibrahima Konaté",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marc Cucurella",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Álvaro Carreras",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Mario Rivas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Dean Huijsen",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Raúl Asencio",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Bernardo Silva",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Federico Valverde",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Brahim Díaz",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Eduardo Camavinga",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jude Bellingham",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Arda Güler",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Thiago Pitarch",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jorge Cestero",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alexis Ciria",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Kylian Mbappé",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Vinícius Júnior",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Rodrygo",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Endrick",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Carlos Espí",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Yan Diomande",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "레알 소시에다드": [
+    {
+      "name": "Álex Remiro",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Unai Marrero",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Aitor Fraga",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Igor Zubeldia",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Álvaro Odriozola",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Aihen Muñoz",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jon Pacheco",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jon Aramburu",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Mamadou Sarr",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Héctor Fort",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jon Martín",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iñaki Rupérez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Luken Beitia",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Carlos Soler",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Yangel Herrera",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Beñat Turrientes",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Luka Sucic",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Arsen Zakharyan",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pablo Marín",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alex Lebarbier",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jon Gorrotxategi",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Mikel Goti",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ibai Aguirre",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gonçalo Guedes",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Takefusa Kubo",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Sergio Gómez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ander Barrenetxea",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Orri Óskarsson",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Alex Marchal",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Job Ochieng",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Gorka Carrera",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "세비야": [
+    {
+      "name": "Rafael Romero",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Odisseas Vlachodimos",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Fran González",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Marcão",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Fábio Cardoso",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Gabriel Suazo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "José Ángel Carmona",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Juan Iglesias",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Arouna Sangante",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Andrés Castrín",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Enrique Salas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Oso",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Julio Díaz",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iker Ortín",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jon Guridi",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Giorgi Kochorashvili",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Rubén Vargas",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Lucien Agoumé",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Manu Bueno",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Edu Altozano",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Nico Guillén",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Chidera Ejuke",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Alfonso González",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Robbie Ure",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Peque",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Isaac Romero",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ibrahima Sow",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Miguel Sierra",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Manuel Ángel Castillo Rodríguez",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "발렌시아": [
+    {
+      "name": "Cristian Rivero",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Stole Dimitrievski",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Kayne Van Oevelen",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Dimitri Foulquier",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "José Gayà",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jesús Vázquez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pablo Maffeo",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Mouctar Diakhaby",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Justin de Haas",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Copete",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Arnau Martínez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "César Tárrega",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Marcos Navarro",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Iker Córdoba",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alex Panach",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Aaron Mayol",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Javi Guerra",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Guido Rodríguez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pepelu",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aliou Dieng",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Filip Ugrinic",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "André Almeida",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Ryunosuke Sato",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jaume Durá I Soler",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Umar Sadiq",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Sergi Canós",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Arnaut Danjuma",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Dani Raba",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Luis Rioja",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Hugo Duro",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Diego López",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "David Otorbi",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ],
+  "비야레알": [
+    {
+      "name": "Péter Gulácsi",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Luiz Júnior",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Rubén Gómez",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Juan Foyth",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Alex Freeman",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Logan Costa",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Carlos Romero",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Sergi Cardona",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Santiago Mouriño",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Renato Veiga",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Pau Navarro",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Santi Comesaña",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Pape Gueye",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alberto Moleiro",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Nathan Saliba",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Alassane Diatta",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Carlos Macià",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Cheikh Ahmad Tidiane Thiam",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Gerard Moreno",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ayoze Pérez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Nicolas Pépé",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Tajon Buchanan",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Tani Oluwaseyi",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Georges Mikautadze",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Ilias Akhomach",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Nizar El Jmili Ben Hamou",
+      "pos": "FW",
+      "position_name": "Forward"
+    }
+  ]
+}
