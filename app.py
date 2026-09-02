@@ -234,6 +234,7 @@ st.set_page_config(
 )
 
 # Top Navigation Bar (7 Sports Leagues)
+# Top Navigation Bar (7 Leagues)
 nav_cols = st.columns(7)
 with nav_cols[0]:
     st.link_button("🏀 NBA ↗", "https://nba-uv-prediction.streamlit.app/", use_container_width=True)
