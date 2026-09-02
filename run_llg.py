@@ -7,7 +7,7 @@ import numpy as np
 from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "pml_data.db")
+DB_PATH = os.path.join(BASE_DIR, "llg_data.db")
 ROSTER_PATH = os.path.join(BASE_DIR, "rosters_2026.json")
 
 # 라리가 20개 구단 및 주요 별칭 영문 -> 한글 매핑
@@ -367,7 +367,7 @@ def fetch_2026_la_liga_schedule():
 
 def run_pipeline():
     # 1. DB 초기화
-    from init_pml_db import create_table
+    from init_llg_db import create_table
     create_table()
     
     # 2. 로스터 수집 및 저장
@@ -458,8 +458,8 @@ def run_pipeline():
 
     conn.commit()
     conn.close()
-    print("🎉 PML 2026-27시즌 정규 파이프라인 구축 완료! pml_data.db 업데이드 완료.")
+    print("🎉 LLG 2026-27시즌 정규 파이프라인 구축 완료! llg_data.db 업데이트 완료.")
 
 if __name__ == "__main__":
-    print("🚀 스페인 라리가(PML) 2026-27시즌 데이터 파이프라인 시작", flush=True)
+    print("🚀 스페인 라리가(LLG) 2026-27시즌 데이터 파이프라인 시작", flush=True)
     run_pipeline()

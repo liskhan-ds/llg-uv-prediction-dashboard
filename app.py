@@ -7,7 +7,7 @@ import altair as alt
 import streamlit as st
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "pml_data.db")
+DB_PATH = os.path.join(BASE_DIR, "llg_data.db") if os.path.exists(os.path.join(BASE_DIR, "llg_data.db")) else os.path.join(BASE_DIR, "pml_data.db")
 ROSTER_PATH = os.path.join(BASE_DIR, "rosters_2026.json")
 
 TEAM_NAME_MAP = {
@@ -226,7 +226,7 @@ def calculate_wuv(team_name, absentees=None):
 # Streamlit 대시보드 UI
 # -----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="PML AI 승부예측",
+    page_title="LLG AI 승부예측",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -252,7 +252,7 @@ with nav_cols[6]:
 
 st.divider()
 
-st.title("⚽ PML AI 승부예측")
+st.title("⚽ LLG AI 승부예측")
 
 def load_data():
     if not os.path.exists(DB_PATH):
@@ -336,7 +336,7 @@ else:
 
 st.markdown("---")
 
-st.header("📈 라운드별 예측 성적표 (PML Gameweek)")
+st.header("📈 라운드별 예측 성적표 (LLG Gameweek)")
 
 if not stats_df.empty:
     group_col = 'round_name' if 'round_name' in stats_df.columns else 'date'
@@ -363,7 +363,7 @@ if not stats_df.empty:
 
     round_stats_7d = round_stats.tail(7)
 
-    base = alt.Chart(round_stats_7d).encode(x=alt.X(group_col, title='PML 라운드 (Gameweek)', sort=None))
+    base = alt.Chart(round_stats_7d).encode(x=alt.X(group_col, title='LLG 라운드 (Gameweek)', sort=None))
     bars = base.mark_bar().encode(
         y=alt.Y('accuracy', title='적중률(%)', scale=alt.Scale(domain=[0, 110])),
         color=alt.Color('bar_color', scale=None),

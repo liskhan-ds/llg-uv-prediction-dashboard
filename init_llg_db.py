@@ -2,7 +2,7 @@ import sqlite3
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "pml_data.db")
+DB_PATH = os.path.join(BASE_DIR, "llg_data.db")
 
 def create_table():
     conn = sqlite3.connect(DB_PATH)
@@ -54,4 +54,4 @@ def create_table():
 
 if __name__ == "__main__":
     create_table()
-    print(f"✅ pml_data.db 데이터베이스 및 테이블 생성 완료: {DB_PATH}")
+    print(f"✅ llg_data.db 데이터베이스 및 테이블 생성 완료: {DB_PATH}")
