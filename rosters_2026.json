@@ -1,5 +1,5 @@
 {
-  "데포르티보 알라베스": [
+  "Alavés": [
     {
       "name": "Adrián Rodríguez",
       "pos": "GK",
@@ -141,7 +141,7 @@
       "position_name": "Forward"
     }
   ],
-  "아틀레틱 빌바오": [
+  "Athletic Club": [
     {
       "name": "Unai Simón",
       "pos": "GK",
@@ -169,11 +169,6 @@
     },
     {
       "name": "Yeray",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
-      "name": "Andoni Gorosabel",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -263,11 +258,6 @@
       "position_name": "Midfielder"
     },
     {
-      "name": "Selton Sánchez",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
       "name": "Álex Berenguer",
       "pos": "FW",
       "position_name": "Forward"
@@ -306,14 +296,9 @@
       "name": "Asier Hierro",
       "pos": "FW",
       "position_name": "Forward"
-    },
-    {
-      "name": "Elijah Gift",
-      "pos": "FW",
-      "position_name": "Forward"
     }
   ],
-  "아틀레티코 마드리드": [
+  "Atlético Madrid": [
     {
       "name": "Jan Oblak",
       "pos": "GK",
@@ -325,17 +310,17 @@
       "position_name": "Goalkeeper"
     },
     {
+      "name": "Salvi Esquivel",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
       "name": "Cristian Romero",
       "pos": "DF",
       "position_name": "Defender"
     },
     {
       "name": "Alejandro Grimaldo",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
-      "name": "José María Giménez",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -376,11 +361,6 @@
     },
     {
       "name": "Jorge Castillo",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
-      "name": "Thomas Lemar",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -430,6 +410,11 @@
       "position_name": "Forward"
     },
     {
+      "name": "Jonathan David",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
       "name": "Julián Álvarez",
       "pos": "FW",
       "position_name": "Forward"
@@ -455,7 +440,7 @@
       "position_name": "Forward"
     }
   ],
-  "바르셀로나": [
+  "Barcelona": [
     {
       "name": "Wojciech Szczesny",
       "pos": "GK",
@@ -493,11 +478,6 @@
     },
     {
       "name": "Jules Koundé",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
-      "name": "Álvaro Cortés",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -552,11 +532,6 @@
       "position_name": "Midfielder"
     },
     {
-      "name": "Marc Casadó",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
       "name": "Fermín López",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -570,6 +545,11 @@
       "name": "Brian Fariñas",
       "pos": "MF",
       "position_name": "Midfielder"
+    },
+    {
+      "name": "Gabriel Jesus",
+      "pos": "FW",
+      "position_name": "Forward"
     },
     {
       "name": "Raphinha",
@@ -607,7 +587,7 @@
       "position_name": "Forward"
     }
   ],
-  "셀타 비고": [
+  "Celta Vigo": [
     {
       "name": "Andrei Radu",
       "pos": "GK",
@@ -640,6 +620,11 @@
     },
     {
       "name": "Javi Galán",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Sebastián Cáceres",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -749,7 +734,7 @@
       "position_name": "Forward"
     }
   ],
-  "데포르티보": [
+  "Deportivo": [
     {
       "name": "Álvaro Fernández",
       "pos": "GK",
@@ -772,6 +757,11 @@
     },
     {
       "name": "Ximo Navarro",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "José María Giménez",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -831,12 +821,12 @@
       "position_name": "Midfielder"
     },
     {
-      "name": "Charlie Patino",
+      "name": "Diego Villares",
       "pos": "MF",
       "position_name": "Midfielder"
     },
     {
-      "name": "Diego Villares",
+      "name": "Marc Casadó",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -901,7 +891,7 @@
       "position_name": "Forward"
     }
   ],
-  "엘체": [
+  "Elche": [
     {
       "name": "Matías Dituro",
       "pos": "GK",
@@ -928,12 +918,22 @@
       "position_name": "Defender"
     },
     {
-      "name": "John Donald",
+      "name": "Kevin Lomónaco",
       "pos": "DF",
       "position_name": "Defender"
     },
     {
       "name": "David Affengruber",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Rubén Sánchez",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Roy Revivo",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -946,6 +946,11 @@
       "name": "Matia Barzic",
       "pos": "DF",
       "position_name": "Defender"
+    },
+    {
+      "name": "Thomas Lemar",
+      "pos": "MF",
+      "position_name": "Midfielder"
     },
     {
       "name": "Josan",
@@ -1038,22 +1043,12 @@
       "position_name": "Forward"
     },
     {
-      "name": "Rafael Núñez",
-      "pos": "FW",
-      "position_name": "Forward"
-    },
-    {
-      "name": "Umaru",
-      "pos": "FW",
-      "position_name": "Forward"
-    },
-    {
       "name": "Álvaro Padilla Escribá",
       "pos": "FW",
       "position_name": "Forward"
     }
   ],
-  "에스파뇰": [
+  "Espanyol": [
     {
       "name": "Marko Dmitrovic",
       "pos": "GK",
@@ -1075,6 +1070,11 @@
       "position_name": "Defender"
     },
     {
+      "name": "Andoni Gorosabel",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
       "name": "Unai Núñez",
       "pos": "DF",
       "position_name": "Defender"
@@ -1086,11 +1086,6 @@
     },
     {
       "name": "Omar El Hilali",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
-      "name": "Rubén Sánchez",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -1195,7 +1190,7 @@
       "position_name": "Forward"
     }
   ],
-  "헤타페": [
+  "Getafe": [
     {
       "name": "David Soria",
       "pos": "GK",
@@ -1227,11 +1222,6 @@
       "position_name": "Defender"
     },
     {
-      "name": "Juan Berrocal",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
       "name": "Abdel Abqar",
       "pos": "DF",
       "position_name": "Defender"
@@ -1253,6 +1243,11 @@
     },
     {
       "name": "Sebastián Boselli",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Mohamed Hamdoune",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -1342,12 +1337,22 @@
       "position_name": "Forward"
     },
     {
+      "name": "Ivan Azón",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Joselu Pérez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
       "name": "Ibra Drammeh",
       "pos": "FW",
       "position_name": "Forward"
     }
   ],
-  "레반테": [
+  "Levante": [
     {
       "name": "Mathew Ryan",
       "pos": "GK",
@@ -1360,11 +1365,6 @@
     },
     {
       "name": "Alejandro Primo",
-      "pos": "GK",
-      "position_name": "Goalkeeper"
-    },
-    {
-      "name": "Daniel Martín",
       "pos": "GK",
       "position_name": "Goalkeeper"
     },
@@ -1479,12 +1479,12 @@
       "position_name": "Forward"
     },
     {
-      "name": "Tai Abed",
+      "name": "Thiago Fernández",
       "pos": "FW",
       "position_name": "Forward"
     },
     {
-      "name": "Thiago Fernández",
+      "name": "Petar Ratkov",
       "pos": "FW",
       "position_name": "Forward"
     },
@@ -1504,7 +1504,7 @@
       "position_name": "Forward"
     }
   ],
-  "말라가": [
+  "Málaga": [
     {
       "name": "Alfonso Herrero",
       "pos": "GK",
@@ -1536,12 +1536,12 @@
       "position_name": "Defender"
     },
     {
-      "name": "Álex Pastor",
+      "name": "Juan Berrocal",
       "pos": "DF",
       "position_name": "Defender"
     },
     {
-      "name": "Dani Sánchez",
+      "name": "Álex Pastor",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -1561,22 +1561,27 @@
       "position_name": "Defender"
     },
     {
-      "name": "Pablo Arriaza",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
       "name": "Rafa Garrido",
       "pos": "DF",
       "position_name": "Defender"
     },
     {
+      "name": "Adam Aznou",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
       "name": "Juan Cruz",
-      "pos": "FW",
-      "position_name": "Forward"
+      "pos": "MF",
+      "position_name": "Midfielder"
     },
     {
       "name": "Pablo Martínez",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Jens Cajuste",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -1656,7 +1661,7 @@
       "position_name": "Forward"
     }
   ],
-  "오사수나": [
+  "Osasuna": [
     {
       "name": "Aitor Fernández",
       "pos": "GK",
@@ -1728,6 +1733,11 @@
       "position_name": "Midfielder"
     },
     {
+      "name": "Romain Del Castillo",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
       "name": "Jon Moncayola",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -1788,7 +1798,7 @@
       "position_name": "Forward"
     }
   ],
-  "라싱 산탄데르": [
+  "Racing Santander": [
     {
       "name": "Julen Agirrezabala",
       "pos": "GK",
@@ -1805,6 +1815,11 @@
       "position_name": "Defender"
     },
     {
+      "name": "Aarón Martín",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
       "name": "Manu",
       "pos": "DF",
       "position_name": "Defender"
@@ -1816,6 +1831,11 @@
     },
     {
       "name": "Alvaro Mantilla",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Jeanuël Belocian",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -1850,6 +1870,11 @@
       "position_name": "Midfielder"
     },
     {
+      "name": "André Almeida",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
       "name": "Iván Martín",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -1866,11 +1891,6 @@
     },
     {
       "name": "Diego Diaz",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
-      "name": "Sergio Martínez",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -1910,6 +1930,16 @@
       "position_name": "Forward"
     },
     {
+      "name": "Pablo García",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Iker Luque",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
       "name": "Hugo Pérez Sañudo",
       "pos": "FW",
       "position_name": "Forward"
@@ -1920,7 +1950,7 @@
       "position_name": "Forward"
     }
   ],
-  "라요 바예카노": [
+  "Rayo Vallecano": [
     {
       "name": "Daniel Cárdenas",
       "pos": "GK",
@@ -1928,6 +1958,11 @@
     },
     {
       "name": "Augusto Batalla",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Adrián Molina",
       "pos": "GK",
       "position_name": "Goalkeeper"
     },
@@ -1952,7 +1987,17 @@
       "position_name": "Defender"
     },
     {
+      "name": "Mujaid Sadick",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
       "name": "Sergio Lozano",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
+      "name": "Adrià Pedrosa",
       "pos": "DF",
       "position_name": "Defender"
     },
@@ -2060,14 +2105,9 @@
       "name": "Fran Pérez",
       "pos": "FW",
       "position_name": "Forward"
-    },
-    {
-      "name": "Etienne Eto'O Pineda",
-      "pos": "FW",
-      "position_name": "Forward"
     }
   ],
-  "레알 베티스": [
+  "Real Betis": [
     {
       "name": "Diego Conde",
       "pos": "GK",
@@ -2139,6 +2179,11 @@
       "position_name": "Midfielder"
     },
     {
+      "name": "Dani Ceballos",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
       "name": "Giovani Lo Celso",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -2197,23 +2242,13 @@
       "name": "Cucho Hernández",
       "pos": "FW",
       "position_name": "Forward"
-    },
-    {
-      "name": "Gonzalo Petit",
-      "pos": "FW",
-      "position_name": "Forward"
-    },
-    {
-      "name": "Pablo García",
-      "pos": "FW",
-      "position_name": "Forward"
     }
   ],
-  "레알 마드리드": [
+  "Real Madrid": [
     {
       "name": "Javier Navarro",
-      "pos": "MF",
-      "position_name": "Midfielder"
+      "pos": "GK",
+      "position_name": "Goalkeeper"
     },
     {
       "name": "Thibaut Courtois",
@@ -2366,7 +2401,7 @@
       "position_name": "Forward"
     }
   ],
-  "레알 소시에다드": [
+  "Real Sociedad": [
     {
       "name": "Álex Remiro",
       "pos": "GK",
@@ -2409,8 +2444,8 @@
     },
     {
       "name": "Mamadou Sarr",
-      "pos": "FW",
-      "position_name": "Forward"
+      "pos": "DF",
+      "position_name": "Defender"
     },
     {
       "name": "Héctor Fort",
@@ -2528,7 +2563,7 @@
       "position_name": "Forward"
     }
   ],
-  "세비야": [
+  "Sevilla": [
     {
       "name": "Rafael Romero",
       "pos": "GK",
@@ -2585,11 +2620,6 @@
       "position_name": "Defender"
     },
     {
-      "name": "Oso",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
       "name": "Julio Díaz",
       "pos": "DF",
       "position_name": "Defender"
@@ -2611,6 +2641,11 @@
     },
     {
       "name": "Rubén Vargas",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Youssouf Fofana",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -2645,7 +2680,17 @@
       "position_name": "Forward"
     },
     {
+      "name": "Felix Correia",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
       "name": "Robbie Ure",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Lucas Stassin",
       "pos": "FW",
       "position_name": "Forward"
     },
@@ -2675,7 +2720,7 @@
       "position_name": "Forward"
     }
   ],
-  "발렌시아": [
+  "Valencia": [
     {
       "name": "Cristian Rivero",
       "pos": "GK",
@@ -2782,7 +2827,7 @@
       "position_name": "Midfielder"
     },
     {
-      "name": "André Almeida",
+      "name": "Harvey Elliott",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -2837,7 +2882,7 @@
       "position_name": "Forward"
     }
   ],
-  "비야레알": [
+  "Villarreal": [
     {
       "name": "Péter Gulácsi",
       "pos": "GK",

@@ -10,32 +10,32 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "llg_data.db")
 ROSTER_PATH = os.path.join(BASE_DIR, "rosters_2026.json")
 
-# 라리가 20개 구단 및 주요 별칭 영문 -> 한글 매핑
+# La Liga 20 teams English Name Mapping
 TEAM_NAME_MAP = {
-    "Real Madrid": "레알 마드리드",
-    "Barcelona": "바르셀로나",
-    "Atlético Madrid": "아틀레티코 마드리드",
-    "Atletico Madrid": "아틀레티코 마드리드",
-    "Athletic Club": "아틀레틱 빌바오",
-    "Athletic Bilbao": "아틀레틱 빌바오",
-    "Real Sociedad": "레알 소시에다드",
-    "Villarreal": "비야레알",
-    "Real Betis": "레알 베티스",
-    "Sevilla": "세비야",
-    "Valencia": "발렌시아",
-    "Celta Vigo": "셀타 비고",
-    "Osasuna": "오사수나",
-    "Rayo Vallecano": "라요 바예카노",
-    "Getafe": "헤타페",
-    "Espanyol": "에스파뇰",
-    "Alavés": "데포르티보 알라베스",
-    "Alaves": "데포르티보 알라베스",
-    "Elche": "엘체",
-    "Levante": "레반테",
-    "Deportivo": "데포르티보",
-    "Málaga": "말라가",
-    "Malaga": "말라가",
-    "Racing Santander": "라싱 산탄데르",
+    "Real Madrid": "Real Madrid",
+    "Barcelona": "Barcelona",
+    "Atlético Madrid": "Atlético Madrid",
+    "Atletico Madrid": "Atlético Madrid",
+    "Athletic Club": "Athletic Club",
+    "Athletic Bilbao": "Athletic Club",
+    "Real Sociedad": "Real Sociedad",
+    "Villarreal": "Villarreal",
+    "Real Betis": "Real Betis",
+    "Sevilla": "Sevilla",
+    "Valencia": "Valencia",
+    "Celta Vigo": "Celta Vigo",
+    "Osasuna": "Osasuna",
+    "Rayo Vallecano": "Rayo Vallecano",
+    "Getafe": "Getafe",
+    "Espanyol": "Espanyol",
+    "Alavés": "Alavés",
+    "Alaves": "Alavés",
+    "Elche": "Elche",
+    "Levante": "Levante",
+    "Deportivo": "Deportivo",
+    "Málaga": "Málaga",
+    "Malaga": "Málaga",
+    "Racing Santander": "Racing Santander",
 }
 
 OFFICIAL_STATS = {
@@ -52,27 +52,27 @@ OFFICIAL_STATS = {
 }
 
 TEAM_CONCEDED_PER_GAME = {
-    "레알 마드리드": 0.85, "바르셀로나": 0.90, "아틀레티코 마드리드": 0.80, "아틀레틱 빌바오": 1.05,
-    "레알 소시에다드": 1.10, "비야레알": 1.35, "레알 베티스": 1.25, "세비야": 1.35,
-    "발렌시아": 1.40, "셀타 비고": 1.45, "오사수나": 1.40, "라요 바예카노": 1.45,
-    "헤타페": 1.30, "에스파뇰": 1.55, "데포르티보 알라베스": 1.50, "엘체": 1.65,
-    "레반테": 1.60, "데포르티보": 1.70, "말라가": 1.75, "라싱 산탄데르": 1.80,
+    "Real Madrid": 0.85, "Barcelona": 0.90, "Atlético Madrid": 0.80, "Athletic Club": 1.05,
+    "Real Sociedad": 1.10, "Villarreal": 1.35, "Real Betis": 1.25, "Sevilla": 1.35,
+    "Valencia": 1.40, "Celta Vigo": 1.45, "Osasuna": 1.40, "Rayo Vallecano": 1.45,
+    "Getafe": 1.30, "Espanyol": 1.55, "Alavés": 1.50, "Elche": 1.65,
+    "Levante": 1.60, "Deportivo": 1.70, "Málaga": 1.75, "Racing Santander": 1.80,
 }
 
 TEAM_GOALS_PER_GAME = {
-    "레알 마드리드": 2.3, "바르셀로나": 2.3, "아틀레티코 마드리드": 1.8, "아틀레틱 빌바오": 1.6,
-    "레알 소시에다드": 1.5, "비야레알": 1.7, "레알 베티스": 1.4, "세비야": 1.3,
-    "발렌시아": 1.2, "셀타 비고": 1.3, "오사수나": 1.15, "라요 바예카노": 1.10,
-    "헤타페": 0.95, "에스파뇰": 1.0, "데포르티보 알라베스": 1.0, "엘체": 0.90,
-    "레반테": 0.95, "데포르티보": 0.85, "말라가": 0.80, "라싱 산탄데르": 0.75,
+    "Real Madrid": 2.3, "Barcelona": 2.3, "Atlético Madrid": 1.8, "Athletic Club": 1.6,
+    "Real Sociedad": 1.5, "Villarreal": 1.7, "Real Betis": 1.4, "Sevilla": 1.3,
+    "Valencia": 1.2, "Celta Vigo": 1.3, "Osasuna": 1.15, "Rayo Vallecano": 1.10,
+    "Getafe": 0.95, "Espanyol": 1.0, "Alavés": 1.0, "Elche": 0.90,
+    "Levante": 0.95, "Deportivo": 0.85, "Málaga": 0.80, "Racing Santander": 0.75,
 }
 
-LOW_POSSESSION_TEAMS = ["헤타페", "엘체", "레반테", "데포르티보", "말라가", "라싱 산탄데르"]
+LOW_POSSESSION_TEAMS = ["Getafe", "Elche", "Levante", "Deportivo", "Málaga", "Racing Santander"]
 
 MATCHWEEK_ABSENCES = {
-    "레알 마드리드": ["Jude Bellingham"],
-    "바르셀로나": ["Gavi", "Ronald Araújo"],
-    "아틀레티코 마드리드": ["Pablo Barrios"],
+    "Real Madrid": ["Jude Bellingham"],
+    "Barcelona": ["Gavi", "Ronald Araújo"],
+    "Atlético Madrid": ["Pablo Barrios"],
 }
 
 def normalize_team_name(raw_name):
@@ -82,7 +82,7 @@ def normalize_team_name(raw_name):
     return raw_name
 
 def fetch_and_save_rosters():
-    print("🔄 ESPN API에서 라리가 2026-27시즌 로스터 수집 중...")
+    print("🔄 Fetching La Liga 2026-27 season rosters from ESPN API...")
     teams_url = "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams"
     try:
         res = requests.get(teams_url, timeout=10).json()
@@ -116,10 +116,10 @@ def fetch_and_save_rosters():
         with open(ROSTER_PATH, "w", encoding="utf-8") as f:
             json.dump(rosters, f, ensure_ascii=False, indent=2)
             
-        print(f"✅ rosters_2026.json 저장 완료 (총 {len(rosters)}개 구단)")
+        print(f"✅ rosters_2026.json saved successfully ({len(rosters)} teams)")
         return rosters
     except Exception as e:
-        print(f"⚠️ 로스터 수집 중 오류 발생: {e}")
+        print(f"⚠️ Error fetching rosters: {e}")
         return {}
 
 def calculate_player_uv(player_data, team_name=""):
@@ -259,17 +259,17 @@ def get_match_prediction(home_team, away_team):
     
     gap = h_total - a_total
     
-    home_kr = normalize_team_name(home_team)
-    away_kr = normalize_team_name(away_team)
+    home_name = normalize_team_name(home_team)
+    away_name = normalize_team_name(away_team)
     
     if abs(gap) <= 0.40:
-        winner = "무승부"
+        winner = "Draw"
         code = "DRAW"
     elif gap > 0.40:
-        winner = f"{home_kr} 승"
+        winner = f"{home_name} Win"
         code = "HOME"
     else:
-        winner = f"{away_kr} 승"
+        winner = f"{away_name} Win"
         code = "AWAY"
         
     z = gap
@@ -335,10 +335,10 @@ def populate_player_stats_db(rosters):
             
     conn.commit()
     conn.close()
-    print(f"✅ player_stats 테이블 {count}명 저장 완료!")
+    print(f"✅ player_stats table populated with {count} players!")
 
 def fetch_2026_la_liga_schedule():
-    print("🔄 ESPN API에서 라리가 2026-27시즌 전체 일정 수집 중...")
+    print("🔄 Fetching 2026-27 La Liga schedule from ESPN API...")
     months = [
         ('20260801', '20260831'), ('20260901', '20260930'), ('20261001', '20261031'),
         ('20261101', '20261130'), ('20261201', '20261231'), ('20270101', '20270131'),
@@ -359,34 +359,29 @@ def fetch_2026_la_liga_schedule():
                     seen_ids.add(e['id'])
                     all_events.append(e)
         except Exception as err:
-            print(f"⚠️ 일정 수집 중 오류 ({start}-{end}): {err}")
+            print(f"⚠️ Error fetching schedule ({start}-{end}): {err}")
             
     all_events.sort(key=lambda x: x['date'])
-    print(f"✅ 2026-27시즌 전체 경기 수집 완료: 총 {len(all_events)}경기")
+    print(f"✅ 2026-27 schedule fetched: {len(all_events)} matches")
     return all_events
 
 def run_pipeline():
-    # 1. DB 초기화
     from init_llg_db import create_table
     create_table()
     
-    # 2. 로스터 수집 및 저장
     rosters = fetch_and_save_rosters()
     if rosters:
         populate_player_stats_db(rosters)
         
-    # 3. 2026-27시즌 일정 수집 및 예측 데이터베이스 구축
     events = fetch_2026_la_liga_schedule()
     if not events:
-        print("❌ 경기를 가져오지 못했습니다.")
+        print("❌ Could not fetch schedule events.")
         return
         
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("DELETE FROM predictions")
     
-    total_events = len(events)
-    # 10경기씩 라운드로 매핑 (380경기가 38라운드)
     for idx, e in enumerate(events, 1):
         round_num = ((idx - 1) // 10) + 1
         round_label = f"Round {round_num} (Gameweek {round_num})"
@@ -419,13 +414,13 @@ def run_pipeline():
         
         if is_completed and act_sc_h is not None and act_sc_a is not None:
             if act_sc_h > act_sc_a:
-                act_winner = f"{h_team} 승"
+                act_winner = f"{h_team} Win"
             elif act_sc_a > act_sc_h:
-                act_winner = f"{a_team} 승"
+                act_winner = f"{a_team} Win"
             else:
-                act_winner = "무승부"
+                act_winner = "Draw"
         elif is_cancelled:
-            act_winner = "경기 연기"
+            act_winner = "Postponed"
         else:
             act_winner = None
             
@@ -458,8 +453,8 @@ def run_pipeline():
 
     conn.commit()
     conn.close()
-    print("🎉 LLG 2026-27시즌 정규 파이프라인 구축 완료! llg_data.db 업데이트 완료.")
+    print("🎉 LLG 2026-27 Pipeline execution complete! llg_data.db updated.")
 
 if __name__ == "__main__":
-    print("🚀 스페인 라리가(LLG) 2026-27시즌 데이터 파이프라인 시작", flush=True)
+    print("🚀 Starting La Liga (LLG) 2026-27 Data Pipeline...", flush=True)
     run_pipeline()
