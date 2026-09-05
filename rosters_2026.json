@@ -228,11 +228,6 @@
       "position_name": "Midfielder"
     },
     {
-      "name": "Unai Vencedor",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
       "name": "Beñat Prados",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -710,11 +705,6 @@
     },
     {
       "name": "Borja Iglesias",
-      "pos": "FW",
-      "position_name": "Forward"
-    },
-    {
-      "name": "Carles Pérez",
       "pos": "FW",
       "position_name": "Forward"
     },
@@ -1434,11 +1424,6 @@
       "position_name": "Defender"
     },
     {
-      "name": "Carlos Álvarez",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
       "name": "Roger Brugué",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -1527,8 +1512,8 @@
     },
     {
       "name": "Moussa Diarra",
-      "pos": "DF",
-      "position_name": "Defender"
+      "pos": "FW",
+      "position_name": "Forward"
     },
     {
       "name": "Fernando Calero",
@@ -1572,8 +1557,8 @@
     },
     {
       "name": "Juan Cruz",
-      "pos": "MF",
-      "position_name": "Midfielder"
+      "pos": "FW",
+      "position_name": "Forward"
     },
     {
       "name": "Pablo Martínez",
@@ -1880,17 +1865,7 @@
       "position_name": "Midfielder"
     },
     {
-      "name": "Gustavo Puerta",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
       "name": "Maguette Gueye",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
-      "name": "Diego Diaz",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -1962,6 +1937,11 @@
       "position_name": "Goalkeeper"
     },
     {
+      "name": "Emil Audero",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
       "name": "Adrián Molina",
       "pos": "GK",
       "position_name": "Goalkeeper"
@@ -1993,8 +1973,8 @@
     },
     {
       "name": "Sergio Lozano",
-      "pos": "DF",
-      "position_name": "Defender"
+      "pos": "MF",
+      "position_name": "Midfielder"
     },
     {
       "name": "Adrià Pedrosa",
@@ -2103,6 +2083,11 @@
     },
     {
       "name": "Fran Pérez",
+      "pos": "FW",
+      "position_name": "Forward"
+    },
+    {
+      "name": "Rayane Belaid",
       "pos": "FW",
       "position_name": "Forward"
     }
@@ -2242,6 +2227,11 @@
       "name": "Cucho Hernández",
       "pos": "FW",
       "position_name": "Forward"
+    },
+    {
+      "name": "José Morante",
+      "pos": "FW",
+      "position_name": "Forward"
     }
   ],
   "Real Madrid": [
@@ -2307,8 +2297,8 @@
     },
     {
       "name": "Mario Rivas",
-      "pos": "DF",
-      "position_name": "Defender"
+      "pos": "FW",
+      "position_name": "Forward"
     },
     {
       "name": "Dean Huijsen",
@@ -2357,6 +2347,11 @@
     },
     {
       "name": "Thiago Pitarch",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Sergio Martínez",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -2504,11 +2499,6 @@
     },
     {
       "name": "Jon Gorrotxategi",
-      "pos": "MF",
-      "position_name": "Midfielder"
-    },
-    {
-      "name": "Mikel Goti",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -2797,11 +2787,6 @@
       "position_name": "Defender"
     },
     {
-      "name": "Aaron Mayol",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
       "name": "Javi Guerra",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -2833,6 +2818,11 @@
     },
     {
       "name": "Ryunosuke Sato",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Aaron Mayol",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -2895,6 +2885,11 @@
     },
     {
       "name": "Rubén Gómez",
+      "pos": "GK",
+      "position_name": "Goalkeeper"
+    },
+    {
+      "name": "Yakiv Kinareykin",
       "pos": "GK",
       "position_name": "Goalkeeper"
     },

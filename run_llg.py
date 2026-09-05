@@ -2,6 +2,7 @@ import sqlite3
 import requests
 import os
 import json
+import zoneinfo
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -80,6 +81,26 @@ def normalize_team_name(raw_name):
         if key.lower() in raw_name.lower() or raw_name.lower() in key.lower():
             return val
     return raw_name
+
+def convert_utc_to_spain_and_kst(utc_str):
+    if not utc_str:
+        return 'N/A', 'N/A'
+    try:
+        clean_str = str(utc_str).replace('Z', '+00:00')
+        dt_utc = datetime.fromisoformat(clean_str)
+        
+        spain_tz = zoneinfo.ZoneInfo('Europe/Madrid')
+        kst_tz = zoneinfo.ZoneInfo('Asia/Seoul')
+        
+        dt_spain = dt_utc.astimezone(spain_tz)
+        dt_kst = dt_utc.astimezone(kst_tz)
+        
+        spain_formatted = dt_spain.strftime('%Y-%m-%d %H:%M')
+        kst_formatted = dt_kst.strftime('%Y-%m-%d %H:%M')
+        
+        return spain_formatted, kst_formatted
+    except Exception:
+        return str(utc_str)[:10], str(utc_str)[:10]
 
 def fetch_and_save_rosters():
     print("🔄 Fetching La Liga 2026-27 season rosters from ESPN API...")
@@ -367,6 +388,13 @@ def fetch_2026_la_liga_schedule():
 
 def run_pipeline():
     from init_llg_db import create_table
+    
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("DROP TABLE IF EXISTS predictions")
+    conn.commit()
+    conn.close()
+    
     create_table()
     
     rosters = fetch_and_save_rosters()
@@ -403,7 +431,8 @@ def run_pipeline():
         h_team = normalize_team_name(h_team_raw)
         a_team = normalize_team_name(a_team_raw)
         
-        date_raw = e.get("date", "")[:10]
+        utc_date_str = e.get("date", "")
+        spain_time, kst_time = convert_utc_to_spain_and_kst(utc_date_str)
         
         status_type = e.get("status", {}).get("type", {}).get("name", "")
         is_completed = (status_type == "STATUS_FULL_TIME")
@@ -437,14 +466,14 @@ def run_pipeline():
             
         cursor.execute("""
         INSERT INTO predictions (
-            match_id, round_name, home_team, away_team, match_date,
+            match_id, round_name, home_team, away_team, match_date, spain_date, kst_date,
             home_wuv, away_wuv, home_total_wuv, away_total_wuv,
             gap, predicted_winner, prob_home, prob_draw, prob_away,
             score_home, score_away,
             actual_score_home, actual_score_away, actual_winner, is_correct
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
-            mid, round_label, h_team, a_team, date_raw,
+            mid, round_label, h_team, a_team, utc_date_str, spain_time, kst_time,
             pred["home_wuv"]["team_wuv"], pred["away_wuv"]["team_wuv"], pred["h_total"], pred["a_total"],
             pred["gap"], pred_winner, pred["p_home"], pred["p_draw"], pred["p_away"],
             pred["sc_h"], pred["sc_a"],
@@ -453,7 +482,7 @@ def run_pipeline():
 
     conn.commit()
     conn.close()
-    print("🎉 LLG 2026-27 Pipeline execution complete! llg_data.db updated.")
+    print("🎉 LLG 2026-27 Pipeline execution complete! llg_data.db updated with Spain & KST dates.")
 
 if __name__ == "__main__":
     print("🚀 Starting La Liga (LLG) 2026-27 Data Pipeline...", flush=True)

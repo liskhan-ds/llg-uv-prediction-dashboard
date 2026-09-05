@@ -16,6 +16,8 @@ def create_table():
         home_team TEXT NOT NULL,
         away_team TEXT NOT NULL,
         match_date TEXT NOT NULL,
+        spain_date TEXT NOT NULL,
+        kst_date TEXT NOT NULL,
         home_wuv REAL NOT NULL,
         away_wuv REAL NOT NULL,
         home_total_wuv REAL NOT NULL,
@@ -54,4 +56,4 @@ def create_table():
 
 if __name__ == "__main__":
     create_table()
-    print(f"✅ llg_data.db 데이터베이스 및 테이블 생성 완료: {DB_PATH}")
+    print(f"✅ llg_data.db database and tables created: {DB_PATH}")

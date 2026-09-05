@@ -1,10 +1,12 @@
 import os
 import json
 import sqlite3
+import zoneinfo
 import pandas as pd
 import numpy as np
 import altair as alt
 import streamlit as st
+from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "llg_data.db")
@@ -80,6 +82,26 @@ def normalize_team_name(raw_name):
         if key.lower() in raw_name.lower() or raw_name.lower() in key.lower():
             return val
     return raw_name
+
+def convert_utc_to_spain_and_kst(utc_str):
+    if not utc_str:
+        return 'N/A', 'N/A'
+    try:
+        clean_str = str(utc_str).replace('Z', '+00:00')
+        dt_utc = datetime.fromisoformat(clean_str)
+        
+        spain_tz = zoneinfo.ZoneInfo('Europe/Madrid')
+        kst_tz = zoneinfo.ZoneInfo('Asia/Seoul')
+        
+        dt_spain = dt_utc.astimezone(spain_tz)
+        dt_kst = dt_utc.astimezone(kst_tz)
+        
+        spain_formatted = dt_spain.strftime('%Y-%m-%d %H:%M')
+        kst_formatted = dt_kst.strftime('%Y-%m-%d %H:%M')
+        
+        return spain_formatted, kst_formatted
+    except Exception:
+        return str(utc_str)[:10], str(utc_str)[:10]
 
 def calculate_player_uv(player_data, team_name=""):
     p_name_raw = player_data.get("name", "")
@@ -234,7 +256,6 @@ st.set_page_config(
 )
 
 # Top Navigation Bar (7 Sports Leagues)
-# Top Navigation Bar (7 Leagues)
 nav_cols = st.columns(7)
 with nav_cols[0]:
     st.link_button("🏀 NBA ↗", "https://nba-uv-prediction.streamlit.app/", use_container_width=True)
@@ -273,10 +294,23 @@ def load_data():
                 df_db["round_name"] = "Round 1 (Gameweek 1)"
             if "date" not in df_db.columns and "match_date" in df_db.columns:
                 df_db["date"] = df_db["match_date"]
-            if "uk_date" not in df_db.columns:
-                df_db["uk_date"] = df_db.get("date", df_db.get("match_date", "2026-08"))
-            if "kst_date" not in df_db.columns:
-                df_db["kst_date"] = df_db.get("date", df_db.get("match_date", "2026-08"))
+                
+            spain_dates = []
+            kst_dates = []
+            for _, r in df_db.iterrows():
+                s_d = r.get("spain_date")
+                k_d = r.get("kst_date")
+                m_d = r.get("match_date", "")
+                if pd.notna(s_d) and pd.notna(k_d) and ":" in str(s_d) and ":" in str(k_d):
+                    spain_dates.append(str(s_d))
+                    kst_dates.append(str(k_d))
+                else:
+                    s_fmt, k_fmt = convert_utc_to_spain_and_kst(m_d)
+                    spain_dates.append(s_fmt)
+                    kst_dates.append(k_fmt)
+            df_db["spain_date"] = spain_dates
+            df_db["kst_date"] = kst_dates
+            
             if "visit_team" not in df_db.columns and "away_team" in df_db.columns:
                 df_db["visit_team"] = df_db["away_team"]
             if "visit_uv" not in df_db.columns and "away_wuv" in df_db.columns:
@@ -302,7 +336,7 @@ if not df.empty and "actual_winner" in df.columns:
     stats_df = df[df["actual_winner"].notna() & (df["actual_winner"] != "") & (~df["actual_winner"].isin(["Postponed", "Cancelled"]))].copy()
 else:
     df = pd.DataFrame(columns=[
-        "total_no", "date", "uk_date", "kst_date", "round_name", "home_team", "visit_team",
+        "total_no", "date", "spain_date", "kst_date", "round_name", "home_team", "visit_team",
         "predicted_winner", "predicted_gap", "prob_home", "prob_draw", "prob_away",
         "home_uv", "visit_uv", "actual_winner", "actual_score_home", "actual_score_away", "is_correct"
     ])
@@ -434,7 +468,7 @@ if not filtered_df.empty:
 
     display_df = pd.DataFrame()
     display_df['No.'] = filtered_df['day_no']
-    display_df['Match Date (UK)'] = filtered_df['uk_date']
+    display_df['Match Time (Spain)'] = filtered_df['spain_date']
     display_df['Match Time (KST)'] = filtered_df['kst_date']
     display_df['Home Team'] = filtered_df.apply(lambda r: f"{r['home_team']} ({r['home_total_wuv']:.2f} WUV)" if ('home_total_wuv' in r and pd.notna(r.get('home_total_wuv'))) else (f"{r['home_team']} ({r['home_uv']:.2f} WUV)" if pd.notna(r.get('home_uv')) else r['home_team']), axis=1)
     display_df['Away Team'] = filtered_df.apply(lambda r: f"{r['visit_team']} ({r['visit_uv']:.2f} WUV)" if pd.notna(r.get('visit_uv')) else r['visit_team'], axis=1)
