@@ -386,14 +386,8 @@ def fetch_2026_la_liga_schedule():
     print(f"✅ 2026-27 schedule fetched: {len(all_events)} matches")
     return all_events
 
-def run_pipeline():
+def run_pipeline(mode="all"):
     from init_llg_db import create_table
-    
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute("DROP TABLE IF EXISTS predictions")
-    conn.commit()
-    conn.close()
     
     create_table()
     
@@ -408,7 +402,6 @@ def run_pipeline():
         
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    cursor.execute("DELETE FROM predictions")
     
     for idx, e in enumerate(events, 1):
         round_num = ((idx - 1) // 10) + 1
@@ -453,37 +446,82 @@ def run_pipeline():
         else:
             act_winner = None
             
-        pred = get_match_prediction(h_team, a_team)
-        pred_winner = pred["winner"]
+        cursor.execute("SELECT predicted_winner FROM predictions WHERE match_id = ?", (mid,))
+        existing = cursor.fetchone()
         
-        if is_completed and act_winner is not None:
-            if (act_winner == pred_winner) or (h_team in act_winner and h_team in pred_winner) or (a_team in act_winner and a_team in pred_winner):
-                is_corr = 1
-            else:
-                is_corr = 0
-        else:
-            is_corr = None
+        if existing:
+            pred_winner = existing[0]
+            if mode in ["score", "all"]:
+                if is_completed and act_winner is not None:
+                    if (act_winner == pred_winner) or (h_team in act_winner and h_team in pred_winner) or (a_team in act_winner and a_team in pred_winner):
+                        is_corr = 1
+                    else:
+                        is_corr = 0
+                else:
+                    is_corr = None
+                    
+                cursor.execute("""
+                UPDATE predictions SET
+                    spain_date = ?,
+                    kst_date = ?,
+                    actual_score_home = ?,
+                    actual_score_away = ?,
+                    actual_winner = ?,
+                    is_correct = ?
+                WHERE match_id = ?
+                """, (spain_time, kst_time, act_sc_h, act_sc_a, act_winner, is_corr, mid))
             
-        cursor.execute("""
-        INSERT INTO predictions (
-            match_id, round_name, home_team, away_team, match_date, spain_date, kst_date,
-            home_wuv, away_wuv, home_total_wuv, away_total_wuv,
-            gap, predicted_winner, prob_home, prob_draw, prob_away,
-            score_home, score_away,
-            actual_score_home, actual_score_away, actual_winner, is_correct
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
-            mid, round_label, h_team, a_team, utc_date_str, spain_time, kst_time,
-            pred["home_wuv"]["team_wuv"], pred["away_wuv"]["team_wuv"], pred["h_total"], pred["a_total"],
-            pred["gap"], pred_winner, pred["p_home"], pred["p_draw"], pred["p_away"],
-            pred["sc_h"], pred["sc_a"],
-            act_sc_h, act_sc_a, act_winner, is_corr
-        ))
+            if mode in ["predict", "all"]:
+                pred = get_match_prediction(h_team, a_team)
+                pred_winner = pred["winner"]
+                cursor.execute("""
+                UPDATE predictions SET
+                    home_wuv = ?, away_wuv = ?, home_total_wuv = ?, away_total_wuv = ?,
+                    gap = ?, predicted_winner = ?, prob_home = ?, prob_draw = ?, prob_away = ?,
+                    score_home = ?, score_away = ?
+                WHERE match_id = ?
+                """, (
+                    pred["home_wuv"]["team_wuv"], pred["away_wuv"]["team_wuv"], pred["h_total"], pred["a_total"],
+                    pred["gap"], pred_winner, pred["p_home"], pred["p_draw"], pred["p_away"],
+                    pred["sc_h"], pred["sc_a"], mid
+                ))
+        else:
+            pred = get_match_prediction(h_team, a_team)
+            pred_winner = pred["winner"]
+            
+            if is_completed and act_winner is not None:
+                if (act_winner == pred_winner) or (h_team in act_winner and h_team in pred_winner) or (a_team in act_winner and a_team in pred_winner):
+                    is_corr = 1
+                else:
+                    is_corr = 0
+            else:
+                is_corr = None
+                
+            cursor.execute("""
+            INSERT INTO predictions (
+                match_id, round_name, home_team, away_team, match_date, spain_date, kst_date,
+                home_wuv, away_wuv, home_total_wuv, away_total_wuv,
+                gap, predicted_winner, prob_home, prob_draw, prob_away,
+                score_home, score_away,
+                actual_score_home, actual_score_away, actual_winner, is_correct
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                mid, round_label, h_team, a_team, utc_date_str, spain_time, kst_time,
+                pred["home_wuv"]["team_wuv"], pred["away_wuv"]["team_wuv"], pred["h_total"], pred["a_total"],
+                pred["gap"], pred_winner, pred["p_home"], pred["p_draw"], pred["p_away"],
+                pred["sc_h"], pred["sc_a"],
+                act_sc_h, act_sc_a, act_winner, is_corr
+            ))
 
     conn.commit()
     conn.close()
     print("🎉 LLG 2026-27 Pipeline execution complete! llg_data.db updated with Spain & KST dates.")
 
 if __name__ == "__main__":
-    print("🚀 Starting La Liga (LLG) 2026-27 Data Pipeline...", flush=True)
-    run_pipeline()
+    import argparse
+    parser = argparse.ArgumentParser(description="LLG Pipeline Runner")
+    parser.add_argument("--mode", choices=["predict", "score", "all"], default="all", help="Pipeline execution mode")
+    args = parser.parse_args()
+
+    print(f"🚀 Starting La Liga (LLG) 2026-27 Data Pipeline (Mode: {args.mode})...", flush=True)
+    run_pipeline(mode=args.mode)

@@ -1,0 +1,40 @@
+name: LLG Score Pipeline
+
+on:
+  schedule:
+    # 2) 경기 결과 무인 자동 채점: 06:17 KST (1차) & 06:47 KST (2차 백업)
+    - cron: '17 21 * * *'
+    - cron: '47 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  llg-score:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Score Pipeline
+        run: |
+          python run_llg.py --mode score
+
+      - name: Commit and Push Changes to GitHub
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add llg_data.db app.py
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-score llg_data.db via GitHub Actions" && git push)
