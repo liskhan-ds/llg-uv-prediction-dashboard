@@ -35,7 +35,7 @@ def convert_utc_to_spain_and_kst(utc_str):
 # Streamlit Dashboard UI
 # -----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="LLG AI Match Prediction",
+    page_title="LaLiga AI Match Prediction",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -48,7 +48,7 @@ render_common_nav("LLG")
 
 st.divider()
 
-st.title("⚽ LLG AI Match Prediction")
+st.title("⚽ LaLiga AI Match Prediction")
 
 def load_data():
     if not os.path.exists(DB_PATH):
@@ -145,7 +145,7 @@ else:
 
 st.markdown("---")
 
-st.header("📈 Prediction Scorecard by Gameweek (LLG Gameweek)")
+st.header("📈 Prediction Scorecard by Gameweek (LaLiga Gameweek)")
 
 if not stats_df.empty:
     group_col = 'round_name' if 'round_name' in stats_df.columns else 'date'
@@ -172,7 +172,7 @@ if not stats_df.empty:
 
     round_stats_7d = round_stats.tail(7)
 
-    base = alt.Chart(round_stats_7d).encode(x=alt.X(group_col, title='LLG Gameweek', sort=None))
+    base = alt.Chart(round_stats_7d).encode(x=alt.X(group_col, title='LaLiga Gameweek', sort=None))
     bars = base.mark_bar().encode(
         y=alt.Y('accuracy', title='Accuracy (%)', scale=alt.Scale(domain=[0, 110])),
         color=alt.Color('bar_color', scale=None),
