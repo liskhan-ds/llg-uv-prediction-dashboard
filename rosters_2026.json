@@ -203,11 +203,6 @@
       "position_name": "Defender"
     },
     {
-      "name": "Adama Boiro",
-      "pos": "DF",
-      "position_name": "Defender"
-    },
-    {
       "name": "Iker Monreal",
       "pos": "DF",
       "position_name": "Defender"
@@ -249,6 +244,11 @@
     },
     {
       "name": "Alejandro Rego",
+      "pos": "MF",
+      "position_name": "Midfielder"
+    },
+    {
+      "name": "Selton Sánchez",
       "pos": "MF",
       "position_name": "Midfielder"
     },
@@ -741,11 +741,6 @@
       "position_name": "Goalkeeper"
     },
     {
-      "name": "Eric Puerto",
-      "pos": "GK",
-      "position_name": "Goalkeeper"
-    },
-    {
       "name": "Ximo Navarro",
       "pos": "DF",
       "position_name": "Defender"
@@ -794,11 +789,6 @@
       "name": "Bright Ede",
       "pos": "DF",
       "position_name": "Defender"
-    },
-    {
-      "name": "José Ángel",
-      "pos": "MF",
-      "position_name": "Midfielder"
     },
     {
       "name": "Riki Rodríguez",
@@ -1100,6 +1090,11 @@
       "position_name": "Defender"
     },
     {
+      "name": "Adama Timera",
+      "pos": "DF",
+      "position_name": "Defender"
+    },
+    {
       "name": "Pere Milla",
       "pos": "MF",
       "position_name": "Midfielder"
@@ -1171,11 +1166,6 @@
     },
     {
       "name": "Cala",
-      "pos": "FW",
-      "position_name": "Forward"
-    },
-    {
-      "name": "Adama Timera",
       "pos": "FW",
       "position_name": "Forward"
     }
