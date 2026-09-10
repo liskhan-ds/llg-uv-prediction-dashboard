@@ -41,10 +41,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-from common_nav import render_common_nav
 
 # Top Navigation Bar
-render_common_nav("LLG")
 
 st.divider()
 

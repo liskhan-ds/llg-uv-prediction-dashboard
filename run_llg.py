@@ -1,13 +1,20 @@
 import sqlite3
 import requests
 import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(BASE_DIR)
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+
+from espn_stats_fetcher import get_espn_player_stats
 import json
 import zoneinfo
 import pandas as pd
 import numpy as np
 from datetime import datetime
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "llg_data.db")
 ROSTER_PATH = os.path.join(BASE_DIR, "rosters_2026.json")
 
@@ -39,42 +46,7 @@ TEAM_NAME_MAP = {
     "Racing Santander": "Racing Santander",
 }
 
-OFFICIAL_STATS = {
-    "Kylian Mbappé": (7.85, 0.85), "Vinícius Júnior": (7.80, 0.65), "Jude Bellingham": (7.75, 0.50),
-    "Rodrygo": (7.45, 0.30), "Federico Valverde": (7.55, 0.20), "Thibaut Courtois": (7.45, 0.0),
-    "Lamine Yamal": (7.85, 0.45), "Robert Lewandowski": (7.70, 0.70), "Pedri": (7.65, 0.25),
-    "Raphinha": (7.60, 0.40), "Gavi": (7.40, 0.15), "Marc-André ter Stegen": (7.35, 0.0),
-    "Antoine Griezmann": (7.70, 0.50), "Julián Alvarez": (7.60, 0.45), "Jan Oblak": (7.40, 0.0),
-    "Nico Williams": (7.55, 0.35), "Iñaki Williams": (7.35, 0.30), "Unai Simón": (7.30, 0.0),
-    "Takefusa Kubo": (7.45, 0.30), "Mikel Oyarzabal": (7.35, 0.35), "Álex Baena": (7.40, 0.25),
-    "Isco": (7.40, 0.25), "Ayoze Pérez": (7.30, 0.35), "Youssef En-Nesyri": (7.25, 0.40),
-    "Dani Olmo": (7.50, 0.30), "Aurélien Tchouaméni": (7.40, 0.10), "Eduardo Camavinga": (7.45, 0.12),
-    "Alexander Sørloth": (7.35, 0.45), "Conor Gallagher": (7.30, 0.20), "Robin Le Normand": (7.35, 0.05),
-}
-
-TEAM_CONCEDED_PER_GAME = {
-    "Real Madrid": 0.85, "Barcelona": 0.90, "Atlético Madrid": 0.80, "Athletic Club": 1.05,
-    "Real Sociedad": 1.10, "Villarreal": 1.35, "Real Betis": 1.25, "Sevilla": 1.35,
-    "Valencia": 1.40, "Celta Vigo": 1.45, "Osasuna": 1.40, "Rayo Vallecano": 1.45,
-    "Getafe": 1.30, "Espanyol": 1.55, "Alavés": 1.50, "Elche": 1.65,
-    "Levante": 1.60, "Deportivo": 1.70, "Málaga": 1.75, "Racing Santander": 1.80,
-}
-
-TEAM_GOALS_PER_GAME = {
-    "Real Madrid": 2.3, "Barcelona": 2.3, "Atlético Madrid": 1.8, "Athletic Club": 1.6,
-    "Real Sociedad": 1.5, "Villarreal": 1.7, "Real Betis": 1.4, "Sevilla": 1.3,
-    "Valencia": 1.2, "Celta Vigo": 1.3, "Osasuna": 1.15, "Rayo Vallecano": 1.10,
-    "Getafe": 0.95, "Espanyol": 1.0, "Alavés": 1.0, "Elche": 0.90,
-    "Levante": 0.95, "Deportivo": 0.85, "Málaga": 0.80, "Racing Santander": 0.75,
-}
-
-LOW_POSSESSION_TEAMS = ["Getafe", "Elche", "Levante", "Deportivo", "Málaga", "Racing Santander"]
-
-MATCHWEEK_ABSENCES = {
-    "Real Madrid": ["Jude Bellingham"],
-    "Barcelona": ["Gavi", "Ronald Araújo"],
-    "Atlético Madrid": ["Pablo Barrios"],
-}
+MATCHWEEK_ABSENCES = {}
 
 def normalize_team_name(raw_name):
     for key, val in TEAM_NAME_MAP.items():
@@ -145,62 +117,36 @@ def fetch_and_save_rosters():
 
 def calculate_player_uv(player_data, team_name=""):
     p_name_raw = player_data.get("name", "")
-    p_name = normalize_team_name(p_name_raw) if "normalize_team_name" in globals() else p_name_raw.strip()
     
     rating = None
     goals_per90 = 0.0
     position = player_data.get("pos", "MF")
     
-    matched = False
-    for off_name, (off_r, off_g90) in OFFICIAL_STATS.items():
-        if off_name.lower() in p_name_raw.lower() or p_name_raw.lower() in off_name.lower():
-            rating = off_r
-            goals_per90 = off_g90
-            matched = True
-            break
-            
+    espn_res = get_espn_player_stats(p_name_raw)
+    if espn_res:
+        rating, goals_per90 = espn_res
+        
     pos_clean = "GK" if position in ["G", "GK"] else ("DF" if position in ["D", "DF"] else ("MF" if position in ["M", "MF"] else "FW"))
-    tgoals = TEAM_GOALS_PER_GAME.get(team_name, 1.30)
-    is_low_poss = team_name in LOW_POSSESSION_TEAMS
     
-    if rating is None:
+    if rating is None or rating == 0:
         if pos_clean == "GK":
             raw_uv = 0.95
         elif pos_clean == "DF":
             raw_uv = 0.90
         elif pos_clean == "MF":
-            raw_uv = 0.82 if is_low_poss else 0.88
+            raw_uv = 0.88
+        else:
+            raw_uv = 0.85
+    elif rating >= 6.88:
+        if pos_clean in ["GK", "DF", "MF"]:
+            raw_uv = 1.0 + (rating - 6.88) * 0.50
         else: # FW
-            raw_uv = 0.78 if tgoals < 1.1 else 0.85
-    elif rating >= 6.65:
-        if pos_clean == "GK":
-            raw_uv = 1.0 + (rating - 6.65) * 0.45
-        elif pos_clean == "DF":
-            raw_uv = 1.0 + (rating - 6.65) * 0.40
-        elif pos_clean == "MF":
-            raw_uv = 1.0 + (rating - 6.65) * 0.35
-            if is_low_poss:
-                raw_uv -= 0.08
-        else: # FW
-            raw_uv = 1.0 + (rating - 6.65) * 0.35 + (goals_per90 * 0.20)
-            if goals_per90 < 0.15 or tgoals < 1.1:
-                fw_penalty = min(0.15, round(0.10 + (0.15 - max(goals_per90, 0.0)) * 0.33, 3))
-                raw_uv -= fw_penalty
+            raw_uv = 1.0 + (rating - 6.88) * 0.50 + (goals_per90 * 0.40)
     else:
         slope = 0.80 if pos_clean == "MF" else 0.65
-        raw_uv = 1.0 + (rating - 6.65) * slope + (goals_per90 * 0.20 if pos_clean == "FW" else 0.0)
-        if pos_clean == "MF" and is_low_poss:
-            raw_uv -= 0.08
-        elif pos_clean == "FW" and (goals_per90 < 0.15 or tgoals < 1.1):
-            fw_penalty = min(0.15, round(0.10 + (0.15 - max(goals_per90, 0.0)) * 0.33, 3))
-            raw_uv -= fw_penalty
-            
-    conc = TEAM_CONCEDED_PER_GAME.get(team_name, 1.30)
-    if pos_clean in ["GK", "DF"] and conc > 1.4:
-        def_penalty = min(0.12, round(0.04 + (conc - 1.4) * 0.10, 3))
-        raw_uv -= def_penalty
+        raw_uv = 1.0 + (rating - 6.88) * slope + (goals_per90 * 0.40 if pos_clean == "FW" else 0.0)
         
-    return round(min(max(raw_uv, 0.4), 2.0), 3)
+    return round(min(max(raw_uv, 0.1), 2.5), 3)
 
 def get_team_roster(team_name, absentees=None):
     if not os.path.exists(ROSTER_PATH):
@@ -213,7 +159,7 @@ def get_team_roster(team_name, absentees=None):
     plist = normalized_map.get(norm_tname, [])
     
     if absentees is None:
-        absentees = MATCHWEEK_ABSENCES.get(norm_tname, [])
+        absentees = []
         
     available = [p for p in plist if p.get("name") not in absentees]
     
@@ -240,8 +186,10 @@ def calculate_wuv(team_name, absentees=None):
     st_avg = sum(st_uvs) / len(st_uvs) if st_uvs else 0.95
     sub_avg = sum(sub_uvs) / len(sub_uvs) if sub_uvs else 0.85
     
-    raw_wuv = (0.85 * st_avg + 0.15 * sub_avg)
-    team_wuv = round(11.0 + 10.5 * (raw_wuv - 0.835), 2)
+    st_tot_sum = sum(st_uvs)
+    sub_tot_sum = sum(sub_uvs)
+    raw_wuv = 0.85 * st_avg + 0.15 * sub_avg
+    team_wuv = round(raw_wuv * 11.0, 3)
     
     pos_sums = {"GK": 0.0, "DF": 0.0, "MF": 0.0, "FW": 0.0}
     starters_detail = []
@@ -252,18 +200,18 @@ def calculate_wuv(team_name, absentees=None):
         pos_sums[pos_clean] += uv
         starters_detail.append({"name": p.get("name"), "pos": pos_clean, "uv": uv})
         
-    st_tot_sum = sum(st_uvs)
-    gk_wuv = round(team_wuv * (pos_sums["GK"] / st_tot_sum), 2) if st_tot_sum > 0 else 1.0
-    df_wuv = round(team_wuv * (pos_sums["DF"] / st_tot_sum), 2) if st_tot_sum > 0 else 4.0
-    mf_wuv = round(team_wuv * (pos_sums["MF"] / st_tot_sum), 2) if st_tot_sum > 0 else 3.0
-    fw_wuv = round(team_wuv * (pos_sums["FW"] / st_tot_sum), 2) if st_tot_sum > 0 else 3.0
+    tot_st_uv = sum(pos_sums.values()) or 1.0
+    gk_wuv = round(team_wuv * (pos_sums["GK"] / tot_st_uv), 2)
+    df_wuv = round(team_wuv * (pos_sums["DF"] / tot_st_uv), 2)
+    mf_wuv = round(team_wuv * (pos_sums["MF"] / tot_st_uv), 2)
+    fw_wuv = round(team_wuv * (pos_sums["FW"] / tot_st_uv), 2)
     
     return {
         "team_wuv": team_wuv,
         "st_avg": round(st_avg, 3),
         "sub_avg": round(sub_avg, 3),
         "st_sum": round(st_tot_sum, 3),
-        "sub_sum": round(sum(sub_uvs), 3),
+        "sub_sum": round(sub_tot_sum, 3),
         "gk_wuv": gk_wuv,
         "df_wuv": df_wuv,
         "mf_wuv": mf_wuv,
@@ -275,7 +223,7 @@ def get_match_prediction(home_team, away_team):
     h_info = calculate_wuv(home_team)
     a_info = calculate_wuv(away_team)
     
-    h_total = h_info["team_wuv"] + 0.25
+    h_total = h_info["team_wuv"] + 0.15
     a_total = a_info["team_wuv"]
     
     gap = h_total - a_total
@@ -340,13 +288,8 @@ def populate_player_stats_db(rosters):
         for p in plist:
             pname = p.get("name")
             pos = p.get("pos", "MF")
-            rating = 6.40
+            rating = 6.88
             goals90 = 0.0
-            for off_n, (r, g) in OFFICIAL_STATS.items():
-                if off_n.lower() in pname.lower() or pname.lower() in off_n.lower():
-                    rating = r
-                    goals90 = g
-                    break
             uv = calculate_player_uv(p, norm_tname)
             cursor.execute("""
             INSERT INTO player_stats (team_name, player_name, position, rating, goals_per90, player_uv)
