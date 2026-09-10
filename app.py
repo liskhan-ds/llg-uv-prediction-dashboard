@@ -35,14 +35,16 @@ def convert_utc_to_spain_and_kst(utc_str):
 # Streamlit Dashboard UI
 # -----------------------------------------------------------------------------
 st.set_page_config(
+
+from common_nav import render_common_nav
+render_common_nav("LLG")
+
     page_title="LaLiga AI Match Prediction",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-from common_nav import render_common_nav
-render_common_nav("LLG")
 
 
 
